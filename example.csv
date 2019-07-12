@@ -1,0 +1,2 @@
+"VCENTER","CLUSTER","HOST","IP","GATEWAY","DNS","VLAN","VMNIC","VERSION","TEMPLATE"
+"vcenter.network.local","cluster01","esxc01n01.network.local","192.168.1.11/24","192.168.1.1","192.168.1.1",501,"vmnic0,vmnic1","esxi65u2","default"

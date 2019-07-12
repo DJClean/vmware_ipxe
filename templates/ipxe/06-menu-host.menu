@@ -1,0 +1,7 @@
+#### ESXi Host $HOST
+
+:esx-$PARSEABLE
+echo Booting $HOST kickstart
+kernel $${web_server}/$VERSION/mboot.efi -c $${web_server}/$VERSION/boot.cfg ks=http://$BOOTNETWORK/kickstart/$PARSEABLE.ks bootproto=dhcp vlanid=$VLAN
+boot || goto failed
+goto menu-$CLUSTER

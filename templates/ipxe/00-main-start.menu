@@ -1,0 +1,13 @@
+#!ipxe
+
+set menu-timeout 60000
+
+set submenu-timeout ${menu-timeout}
+
+set menu-default exit
+
+## Main menu
+
+:start
+menu iPXE boot menu
+item --gap --		--------------------- VMware iPXE Menu ---------------------

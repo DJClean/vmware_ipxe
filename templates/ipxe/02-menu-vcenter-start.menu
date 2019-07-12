@@ -1,0 +1,5 @@
+## Sub-menu $VCENTERNAME
+
+:menu-$VCENTER
+menu $VCENTERNAME Installations
+item --gap --		---------------- Clusters -----------------

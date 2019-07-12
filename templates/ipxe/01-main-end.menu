@@ -1,0 +1,26 @@
+item
+item shell		Drop to iPXE shell
+item exit		Boot system
+choose --timeout ${menu-timeout} --default ${menu-default} selected || goto cancel
+set menu-timeout 0
+goto ${selected}
+
+:cancel
+echo Cancelled the menu, dropping to a shell
+
+:shell
+echo Type 'exit' to get back to the menu
+shell
+set menu-timeout 0
+set submenu-timeout
+goto start
+
+:failed
+echo Booting failed, dropping to a shell
+goto shell
+
+:reboot
+reboot
+
+:exit
+exit

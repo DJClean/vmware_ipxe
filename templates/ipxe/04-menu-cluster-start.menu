@@ -1,0 +1,5 @@
+### Sub-menu $CLUSTER
+
+:menu-$PARSEABLE
+set submenu-default back-$VCENTER
+menu Installation for $CLUSTER menu
