@@ -84,7 +84,7 @@ def build_menu(cursor):
 def build_menu_vcenter(cursor, vcenter):
     #print("vCenter Menu: %s" % (vcenter))
     query = cursor.execute("SELECT DISTINCT(cluster) FROM hosts \
-                           WHERE vcenter = ?",
+                           WHERE vcenter = ? ORDER BY cluster",
                            (vcenter, ))
 
     template_vcenter_start = Template(open("%s/ipxe/02-menu-vcenter-start.menu"
